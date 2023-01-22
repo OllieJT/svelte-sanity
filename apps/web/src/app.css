@@ -1,0 +1,15 @@
+@tailwind base;
+@layer base {
+}
+
+@tailwind components;
+@layer components {
+
+	.text-label {
+		@apply font-sans text-xs font-medium uppercase leading-tight tracking-widest;
+	}
+}
+
+@tailwind utilities;
+@layer utilities {
+}

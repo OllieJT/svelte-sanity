@@ -1,0 +1,14 @@
+{
+	"name": "local-constants",
+	"version": "0.0.0",
+	"private": true,
+	"main": "index.ts",
+	"license": "MIT",
+	"scripts": {
+		"lint": "tsc --pretty --noImplicitAny"
+	},
+	"devDependencies": {
+		"local-tsconfig": "*",
+		"typescript": "^4.9.4"
+	}
+}

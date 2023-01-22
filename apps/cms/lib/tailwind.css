@@ -1,0 +1,91 @@
+/* TAILWIND */
+@tailwind base;
+@layer base {
+	/* FONT */
+	@font-face {
+		font-family: 'Recoleta';
+		src: url('/font/recoletaalt-thin.woff2') format('woff2'),
+			url('/font/recoletaalt-thin.woff') format('woff');
+		font-weight: 100;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Recoleta';
+		src: url('/font/recoletaalt-light.woff2') format('woff2'),
+			url('/font/recoletaalt-light.woff') format('woff');
+		font-weight: 300;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Recoleta';
+		src: url('/font/recoletaalt-regular.woff2') format('woff2'),
+			url('/font/recoletaalt-regular.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Recoleta';
+		src: url('/font/recoletaalt-medium.woff2') format('woff2'),
+			url('/font/recoletaalt-medium.woff') format('woff');
+		font-weight: 500;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Recoleta';
+		src: url('/font/recoletaalt-semibold.woff2') format('woff2'),
+			url('/font/recoletaalt-semibold.woff') format('woff');
+		font-weight: 600;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Recoleta';
+		src: url('/font/recoletaalt-bold.woff2') format('woff2'),
+			url('/font/recoletaalt-bold.woff') format('woff');
+		font-weight: bold;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: 'Recoleta';
+		src: url('/font/recoletaalt-black.woff2') format('woff2'),
+			url('/font/recoletaalt-black.woff') format('woff');
+		font-weight: 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	.text-label {
+		@apply font-sans text-xs font-medium uppercase leading-tight tracking-wider;
+	}
+
+	.prose-defaults {
+		@apply prose prose-lg prose-pink text-mono-500 prose-headings:mt-[0.5em] prose-headings:mb-1 prose-headings:font-serif prose-headings:font-semibold prose-h1:font-bold prose-h2:font-medium prose-p:mt-2 prose-p:mb-1 prose-blockquote:my-3 prose-blockquote:rounded-2xl prose-blockquote:border prose-blockquote:py-3 prose-blockquote:px-3;
+	}
+
+	.prose-hero {
+		@apply prose-xl prose-headings:mt-[0.5em] prose-headings:mb-[0.25em] prose-headings:leading-tighter first:prose-headings:mt-0 last:prose-headings:mb-0 prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl prose-h5:text-lg prose-p:mt-[0.5em] prose-p:mb-[0.5em] prose-p:text-base last:prose-p:mb-0 sm:prose-headings:leading-none sm:prose-h1:text-5xl sm:prose-h2:text-4xl sm:prose-h3:text-3xl sm:prose-h4:text-2xl sm:prose-h5:text-xl sm:prose-p:text-lg md:prose-h1:text-7xl md:prose-h1:leading-squash md:prose-h2:text-6xl md:prose-h3:text-5xl md:prose-h4:text-3xl md:prose-h5:text-2xl md:prose-p:text-xl;
+	}
+
+	.prose-defaults-theme {
+		@apply text-theme-700 marker:text-theme-500 prose-headings:text-theme-900 prose-blockquote:border-theme-200 prose-blockquote:bg-theme-50 prose-blockquote:text-theme-700;
+	}
+
+	.prose-defaults-green {
+		@apply prose-green text-green-700 marker:text-green-500 prose-headings:text-green-900 prose-blockquote:border-green-200 prose-blockquote:bg-green-50 prose-blockquote:text-green-700;
+	}
+
+	.prose-defaults-red {
+		@apply prose-red text-red-700 marker:text-red-500 prose-headings:text-red-900 prose-blockquote:border-red-200 prose-blockquote:bg-red-50 prose-blockquote:text-red-700;
+	}
+
+	small {
+		@apply text-[0.75em];
+	}
+}
+@tailwind components;
+@tailwind utilities;

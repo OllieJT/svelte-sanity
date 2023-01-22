@@ -1,0 +1,16 @@
+{
+	// See http://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+		"aaron-bond.better-comments",
+		"bradlc.vscode-tailwindcss",
+		"csstools.postcss",
+		"esbenp.prettier-vscode",
+		"gruntfuggly.todo-tree",
+		"hdoro.sanity-snippets",
+		"mikestead.dotenv",
+		"ms-vscode.vscode-typescript-next",
+		"sanity-io.vscode-sanity",
+		"VisualStudioExptTeam.vscodeintellicode"
+	]
+}

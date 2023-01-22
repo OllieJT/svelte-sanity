@@ -1,0 +1,27 @@
+{
+	"name": "TODO",
+	"version": "0.0.0",
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"prettier": "@inqling/prettier-config",
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev --parallel",
+		"lint": "turbo run lint",
+		"deploy": "turbo run deploy",
+		"format": "prettier --write \"**/*.{ts,tsx,svelte,md,json}\""
+	},
+	"devDependencies": {
+		"@inqling/prettier-config": "^1.1.0",
+		"prettier": "latest",
+		"turbo": "latest"
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"dependencies": {},
+	"packageManager": "yarn@1.22.19"
+}
